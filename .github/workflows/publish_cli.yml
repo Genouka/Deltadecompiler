@@ -13,10 +13,10 @@ jobs:
       matrix:
         os: [ubuntu-22.04-arm]
         configuration: [Debug]
-        bundled: [true, false]
+        bundled: [true]
         include:
           - os: ubuntu-22.04-arm
-            rid: linux-musl
+            rid: linux-arm64
 
     runs-on: ${{ matrix.os }}
 
